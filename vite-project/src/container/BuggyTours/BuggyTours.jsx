@@ -37,7 +37,6 @@ const BuggyTours = () => {
                 image={item.buggyfile}
               />
               <CardContent sx={{ textAlign: 'center', textTransform: 'uppercase' }}>
-                <div className="discount__strip">-10%</div> {/* Discount strip */}
                 <Typography gutterBottom variant="h5" component="div">
                   {item.title}
                 </Typography>

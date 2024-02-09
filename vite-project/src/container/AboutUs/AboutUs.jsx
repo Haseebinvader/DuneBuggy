@@ -29,7 +29,7 @@ const AboutUs = () => (
             <p>Secure Payments</p>
           </div>
         </div>
-        <button style={{ marginTop: '20px' }} type="button" className="custom__button">Know More</button>
+        {/* <button style={{ marginTop: '20px' }} type="button" className="custom__button">Know More</button> */}
       </div>
     </div>
   </div>

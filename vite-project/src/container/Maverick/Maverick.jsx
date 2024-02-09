@@ -46,7 +46,7 @@ const Maverick = () => {
                     {item.description}
                   </Typography>
                   <button type="button" className="custom__button">
-                  <BookingForm buggyId={item._id} buggyTitle={item.title} buggyPrice={item.price} buggyDesc={item.description} />
+                    <BookingForm buggyId={item._id} buggyTitle={item.title} buggyPrice={item.price} buggyDesc={item.description} />
                   </button>
                 </CardContent>
               </CardActionArea>
