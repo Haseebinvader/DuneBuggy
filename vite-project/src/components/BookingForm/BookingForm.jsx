@@ -7,6 +7,8 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function BookingForm({ buggyId, buggyTitle, buggyPrice, buggyDesc }) {
     const [open, setOpen] = React.useState(false);
@@ -45,12 +47,15 @@ export default function BookingForm({ buggyId, buggyTitle, buggyPrice, buggyDesc
 
             if (response.ok) {
                 console.log('Order placed successfully');
+                toast.success("Booking Successfull")
                 handleClose();
             } else {
                 console.error('Failed to place order');
+                toast.error("Cannot Book at the moment")
             }
         } catch (error) {
             console.error('Error while sending the request:', error);
+            toast.error("Cannot Book at the moment")
         }
     };
 

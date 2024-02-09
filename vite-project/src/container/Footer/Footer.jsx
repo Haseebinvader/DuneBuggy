@@ -9,8 +9,7 @@ const Footer = () => (
       <div className="app__footer-links_contact">
         <h1 className="app__footer-headtext">Contact Us</h1>
         <p className="p__opensans">Dubai</p>
-        <p className="p__opensans">+1 212-344-1230</p>
-        <p className="p__opensans">+1 212-555-1230</p>
+        <p className="p__opensans">+971 58 287 8842</p>
       </div>
       <div className="app__footer-links_logo">
         <h1 style={{ color: '#fff' }}> RED DUNE BUGGY</h1>
